@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <!--
 Author: Courtney Ardis 
 Project: Web App Part 1
@@ -15,11 +15,13 @@ Term: 1206
 		<title>Add Comic to Collection</title>
 	</head>
 	<body>
-		<h1>Add Comic</h1>
+		<h1>Comic Book Collection</h1>
+		<!-- Add Comic Form -->
 		<form action="#" method="post">
 			<fieldset>
 				<legend>Comic Information</legend>
 					<ul>
+						<!-- Comic Information Inputs -->
 						<li><label for="comicTitle">Title of Comic:</label><input type="text" id="comicTitle" /></li>
 						<li><label for="seriesTitle">Title of Series:</label><input type="text" id="seriesTitle" /></li>
 						<li><label for="issueNum">Issue Number:</label><input type="text" id="issueNum" /></li>
@@ -27,6 +29,7 @@ Term: 1206
 						<li><label for="publisher">Publisher:</label><input type="text" id="publisher" /></li>
 						<li><label for="rateIssue">Rate Issue (0-5 Scale):</label><input type="range" id="rateIssue" min="0" max="5" /></li>
 						<li>
+							<!-- Genre Dropdown Menu -->
 							<label for="genre">Select Genre:</label>
 							<select id="genre">
 								<option>Superhero</option>
@@ -39,23 +42,25 @@ Term: 1206
 						</li>
 						<li>Illustration Style:
 							<ul>
+								<!-- Illustration Radio Buttons -->
 								<li><input type="radio" id="fullColor" value="Full Color" name="style" /><label for="fullColor">Full Color</label></li>
 								<li><input type="radio" id="blackWhite" value="Black &amp; White" name="style" /><label for="blackWhite">Black &amp; White</label></li>
 								<li><input type="radio" id="combination" value="Combination" name="style" /><label for="combination">Combination</label></li>
 							</ul>
 						</li>
+						<!-- Comment Textarea -->
 						<li><label for="comments">Comments:</label><textarea id="comments"></textarea></li>
 
 					</ul>			
 			</fieldset>
-			<input type="button" value="Submit" name="submit" />						
+			<!-- Submit Elements -->			
 			<input type="hidden" name="country" value="USA" />
+			<input type="button" value="Add Comic" name="submit" />						
 			<footer>
 				<nav>
-					<ul>
-						<li><a href="#" title="clearData">Clear Data</a></li>
-						<li><a href="#" title="displayData">Display Data</a></li>
-					</ul>
+					<!-- Local Storage Nav Elements -->
+					<a href="#" title="clearData">Clear Data</a>
+					<a href="#" title="displayData">Display Data</a>
 				</nav>
 			</footer>
 		</form>
